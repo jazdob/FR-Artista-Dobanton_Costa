@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="./../styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="./../styles/medias.css" />
     <!--Fuente inicio-->
@@ -33,32 +36,49 @@
     <title>Fiorella Roetto | Artista</title>
 </head>
 <body>
-    <div class="gridContacto">
+    <div>
         <!--Cabecera de la página-->
-        <header class="header">
+        <header>
             <!--Barra de navegación-->
-            <nav>
-                <!-- Enlaces de la barra de navegacion -->
-                <ul class="header__menu">
-                    <li><a href="./../index.html">HOME</a></li>
-                    <li><a href="./../#bioFio">BIO</a></li>
-                    <li><a href="./fotos.html">FOTOS</a></li>
-                    <li><a href="./reel.html">REEL</a></li>
-                    <li><a href="./cv.html">CV</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                </ul>
-                <!-- Fin de los enlaces de la barra de navegacion  -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./../#bioFio">BIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./fotos.html">FOTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./reel.html">REEL</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./cv.html">CV</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
             <!--Fin de la barra de navegación-->
         </header>
         <!--Fin de la cabecera de la página-->
-        <div class="imgContacto">  
-            <div class="boximgContacto">            
-                <img class="idimgContacto" src="./../assets/Imagendraft3.jpg" alt="fiorella" title="Fiorella"/>
+        <div>  
+            <div>            
+                <img src="./../assets/Imagendraft3.jpg" alt="fiorella" title="Fiorella"/>
             </div>
         </div>
-        <div class="datosContacto">
-            <div class="boxdatosContacto">
+        <div>
+            <div>
                 <ul>
                     <li>Fiorella Roetto</li>
                     <li>Email: fiorella.roetto@gmail.com</li>
@@ -66,23 +86,23 @@
                 </ul>
             </div>
         </div>
-        <div class="formContacto">
-            <div class="boxForm">
+        <div>
+            <div>
                 <form>
                     <label for="nombre">
                         Nombre*
                     </label>
-                    <input type="text" id="nombre" />
+                    <input type="text"/>
                     <br />
                     <label for="email">
                         E-mail*
                     </label>
-                    <input type="email" id="email" />
+                    <input type="email"/>
                     <br />
                     <label for="telefono">
                         Teléfono
                     </label>
-                    <input type="text" id="telefono" />
+                    <input type="text"/>
                     <br />
                     <label for="mensaje">
                         Mensaje*
@@ -102,38 +122,40 @@
                 </form>
             </div>
         </div>
-        <!-- Inicia Footer -->
-        <footer class="footer">
-            <form class="form">
-                <label for="recibirEmail">
+         <!-- Inicia Footer -->
+         <footer>
+            <form>
+                <label>
                     Para recibir noticias y actualizaciones, regístrese con su dirección de correo electrónico a continuación.
                 </label>
                 <!-- <div class="footer__Novedades"></div> VER SI NO SIRVE ELIMINAR-->
                 <div>   
-                    <input type="email" id="recibirEmail" />
-                    <input type="submit" class="btn"/>    
+                    <input type="email"/>
+                    <input type="submit"/>    
                 </div>     
             </form>
-            <div class="packageSocialMediaIcon">
+            <div>
                 <a href="https://www.youtube.com/channel/UCMGypMiW1E7PmSBw8vI61Tg/featured/" target="_blank">
-                    <img class="socialMediaIcon" src="./../assets/youtube.png" alt="youtube" title="You Tube"/>
+                    <img src="./../assets/youtube.png" alt="youtube" title="You Tube"/>
                 </a>
                 <a href="https://www.instagram.com/firoetto/" target="_blank"> 
-                    <img class="socialMediaIcon" src="./../assets/ig.png" alt="instagram" title="Instagram"/>
+                    <img src="./../assets/ig.png" alt="instagram" title="Instagram"/>
                 </a>
                 <a href="https://www.tiktok.com/@firoetto/" target="_blank">  
-                    <img class="socialMediaIcon" src="./../assets/tiktok.png" alt="tiktok" title="Tik Tok"/>
+                    <img src="./../assets/tiktok.png" alt="tiktok" title="Tik Tok"/>
                 </a>
             </div>
-            <ul class="footer__contacto">
+            <ul>
                 <li><a href="./contacto.html">CONTACTO</a></li>
             </ul>
-            <div class="footer__derechos">
+            <div>
                 <P>Copyryght© 2022 Fiorella Roetto.</P> 
                 <P>Reservados todos los derechos.</P>
             </div>
         </footer>
         <!-- Fin del footer  -->
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
