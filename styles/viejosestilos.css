@@ -1,0 +1,466 @@
+/* Usar camelCase */
+
+* {
+    box-sizing: border-box;
+    margin:0;
+	padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color:  #000000;
+}
+
+a { /* Afecta a todos los vinculos */
+    color:  #FFFFFF;
+}
+
+.gridIndex {
+    display: grid;  
+    grid-template-areas:    "menu               menu            menu"
+                            "contenido          contenido       contenido"   
+                            "footer             footer          footer";
+}
+
+.header{
+    grid-area: menu;
+    background-color: #2b2929;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+}
+
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    justify-items: center;
+}
+
+.contenido {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:    "titulo     titulo      titulo"
+                            "imagen     imagen      imagen"
+                            "bio        bio         bio";
+}
+
+.tituloPrincipal {
+    padding-top: 50px;
+    grid-area: titulo;
+    background-color: #6d6d6d;
+    width: 100%;
+    color: #FFFFFF; 
+    font-size: 80px;
+    text-align: center;
+}
+
+.imagenPrincipal {
+    background-color: #3d3d3d;
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 700px; 
+}
+
+.boxImagenHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%; 
+    height: 90%;
+    background-color: #3d3d3d;
+  
+}
+
+#imagenHome {
+    border-radius: 20px;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.biografia {
+    grid-area: bio;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloBio {
+    font-size: 40px;
+    margin: 5px;
+    padding: 20px;
+    padding-left: 28px;
+    padding-bottom: 0%;
+    color: #FFFFFF;  
+}
+
+.bioTextos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color:  #FFFFFF;
+    margin: 5px;
+    padding: 20px;  
+}
+
+.bioParrafos {
+    text-align: justify;
+    margin: 10px;
+}
+
+.footer {
+    margin: 20px;
+    margin-bottom: 0px;
+    grid-area: footer;
+    height: fit-content;
+}
+
+.form{
+    color: #FFFFFF;
+}
+
+.btn { /* Editar cuando tenga definición de paleta */
+    color: #000000; 
+    border-color: #ff00dd;
+    border-style: solid; 
+}
+
+.packageSocialMediaIcon {
+    text-align: center;
+}
+
+.socialMediaIcon {
+    width: 30px; 
+    height:30px;
+}
+
+.footer__contacto {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__derechos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color:  #FFFFFF
+}
+
+.gridFotos {
+    display: grid;  
+    grid-template-areas:    "menu"
+                            "galeria"   
+                            "footer";
+}
+
+.galeria {  
+    grid-area: galeria; 
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+}
+
+.boxGaleria { 
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.imagenFotos {
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+
+.gridReel {
+    display: grid;  
+    grid-template-areas:    "menu"
+                            "reel"   
+                            "footer";
+}
+
+.reel {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 100%; 
+    height: 365px;
+    background-color: #3d3a3a;
+    display: flex;
+    justify-content: center; 
+    grid-area: reel;  
+}
+
+
+.gridCv {
+    display: grid;  
+    grid-template-areas:    "menu"
+                            "cv"   
+                            "footer";
+}                        
+
+.cv {
+    padding-top: 60px;
+    margin: 30px;
+    display: grid;  
+    grid-template-areas:    "imagencv1       textocv1"
+                            "imagencv2       textocv2";
+}
+
+.boximageCV {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imagenCv { 
+    width: 200px; 
+    height:200px;
+}
+
+.textosCv {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    margin: 20px;
+    color:  #FFFFFF;
+}
+
+#bienquerencia {
+    grid-area: imagencv1; 
+}
+
+#circular {
+    grid-area: imagencv2; 
+}
+
+#textocv1 {
+    grid-area: textocv1;
+}
+
+#textocv2 {
+    grid-area: textocv2;
+}
+
+
+.gridContacto {
+    display: grid;  
+    grid-template-areas:    "menu           menu"
+                            "imgContacto    formContacto"
+                            "datosContacto  formContacto"   
+                            "footer         footer"; 
+}
+
+.imgContacto {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: imgContacto;
+}
+
+.boximgContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 200px;
+    background:  #d2cfcf;
+}
+
+.idimgContacto {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boxdatosContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: lavender;
+    border-radius: 20px;
+    border-style: solid;
+    width: 250px; 
+    height:150px;
+    color:  #FFFFFF;
+}
+
+.datosContacto {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    grid-area: datosContacto;
+} 
+
+.datosContacto ul {
+    text-align: center;
+}
+
+.boxForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContacto {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: formContacto;
+    color:  #FFFFFF
+
+}
+
+form {
+    color:  #FFFFFF 
+}
+
+.datosContacto ul {
+    color:  #FFFFFF
+}
+
+
+/* .footer__Novedades {
+    padding-top: 10px;
+    Este div esta comentado - ver si no lo uso eliminar
+}*/
+
+
+
+/* Responsive Mobile */
+
+@media  screen and (max-width:648px) {
+
+    /* index */
+    
+    .gridIndex {
+        display: grid;  
+        grid-template-areas:    "menu"
+                                "contenido"   
+                                "footer";
+    }
+    
+    .contenido {
+        grid-area: contenido;
+        display: grid;
+        grid-template-areas:    "titulo"
+                                "imagen"
+                                "bio";
+    }
+    
+    .header{
+        font-size: 18px;
+    }
+    
+    
+    .tituloPrincipal {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    
+    #imagenHome {
+        height: 500px; 
+        width: 400px;
+        border-radius: 20px;
+        margin:auto;
+        display:block;
+    }
+    
+    .bioTextos {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color:  #FFFFFF;
+        margin: 5px;
+        padding: 20px;  
+    }
+    
+    /* page reel */
+    
+    .reel {
+        padding-top: 40px;
+        height: 650px;
+    }
+    
+    
+    /* page fotos */
+    
+    
+        .galeria {
+            flex-direction: column;
+        }
+    
+        .boxGaleria { 
+            margin: 0px;
+        }
+    
+    
+    
+    /* page cv */
+    
+    .cv {
+        padding-top: 40px;
+        margin: 10px;
+        display: grid;  
+        grid-template-areas:    "imagencv1"
+                                "textocv1"
+                                "imagencv2"      
+                                "textocv2";
+    }
+    
+    
+    /* page contacto */
+    
+    .gridContacto {
+        display: grid;  
+        grid-template-areas:    "menu"
+                                "imgContacto"
+                                "datosContacto"
+                                "formContacto"   
+                                "footer"; 
+    }
+    
+    .formContacto {
+        padding-top: 0px;
+    }
+    
+    
+    
+    
+    }

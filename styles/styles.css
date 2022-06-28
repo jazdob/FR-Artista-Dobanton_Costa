@@ -1,12 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
+.miHeader {
+  font-weight: bold;
+}
+.miHeader .barrita {
+  background-color: #2b2929;
+}
+.miHeader .barrita a {
+  color: #FFFFFF !important;
+}
+
+.socialMediaIcon {
+  text-align: center;
+}
+
+.footer__derechos {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+}
+
+.tituloPrincipal {
+  margin-top: 60px;
+}
+
+.imagenPrincipal {
+  background-color: #A8D015;
+}
+
+#bioFio {
+  font-weight: bold;
+}
+
+.galeria {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 .galeria img {
-    width: 100%;
+  width: 100%;
+}
+.galeria img:hover {
+  border: 2px solid #A937F9;
 }
 
-.galeria img:hover {
-    border: 2px solid #A8D015
+.reel {
+  background-color: #6d6d6d;
+  margin-top: 60px;
 }
+
+.cv {
+  margin-top: 60px;
+}
+
+.boxContacto {
+  margin-top: 60px;
+}
+.boxContacto .datosContacto {
+  grid-area: cardContacto;
+}
+.boxContacto .formularioContacto {
+  grid-area: formContacto;
+}
+
+@media screen and (max-width: 648px) {
+  /* Contacto */
+  .gridContacto {
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "cardContacto" "formContacto";
+  }
+}/*# sourceMappingURL=styles.css.map */

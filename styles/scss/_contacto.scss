@@ -1,0 +1,11 @@
+.boxContacto {
+    margin-top: 60px;
+
+    .datosContacto {
+        grid-area: cardContacto;
+    }
+
+    .formularioContacto {
+        grid-area: formContacto;
+    }
+}

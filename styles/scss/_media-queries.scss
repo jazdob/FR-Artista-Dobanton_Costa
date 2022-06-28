@@ -1,0 +1,11 @@
+@media  screen and (max-width:648px) {
+
+    /* Contacto */
+    
+    .gridContacto {
+        justify-content: center;
+        display: grid;  
+        grid-template-areas:    "cardContacto"
+                                "formContacto"
+    }
+    }
