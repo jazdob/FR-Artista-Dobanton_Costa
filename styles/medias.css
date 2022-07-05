@@ -1,6 +1,77 @@
+
+/* Ajuste HEIGHT Footer */
+
+@media  screen and (min-height: 620px) {
+    
+    .boxReel {
+        height: 630px;
+}
+
+}
+
+@media  screen and (min-height:900px) {
+    
+
+    .boxReel {
+        height: 880px;
+    }
+
+    .reel {
+        padding: 200px;
+        
+    }
+
+    .gridCv {
+        height: 1120px;
+    }
+
+    .cv {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .boxContacto {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+
+}
+
+
+@media  screen and (min-height:1120px) {
+
+    .boxContacto {
+        padding-top: 200px;
+        padding-bottom: 350px;
+    }
+
+    .boxReel {
+        height: 1120px;
+        padding-bottom: 800px;
+    }
+    .reel {
+        padding: 200px;
+        padding-bottom: 400px;
+    }
+}
+
+
+
+/* Ajuste Título principal */
+
+@media  screen and (max-width:1020px) {
+    
+    .tituloPrincipal {
+        font-size: 50px;
+    }
+
+}
+
+
+
 /* Responsive Mobile */
 
-@media  screen and (max-width:648px) {
+@media  screen and (max-width:795px) {
 
 /* index */
 
@@ -42,7 +113,6 @@
     grid-template-columns: 1fr;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
     color:  #FFFFFF;
     margin: 5px;
     padding: 20px;  
@@ -50,9 +120,14 @@
 
 /* page reel */
 
-.reel {
+.boxReel {
     padding-top: 40px;
-    height: 650px;
+    padding-bottom: 600px;
+}
+
+.reel {
+    padding: 30px;
+    padding-top: 200px;
 }
 
 
@@ -74,30 +149,171 @@
 .cv {
     padding-top: 40px;
     margin: 10px;
-    display: grid;  
-    grid-template-areas:    "imagencv1"
-                            "textocv1"
-                            "imagencv2"      
-                            "textocv2";
 }
 
+.cvfila1 {
+    display: inline-block;
+}
+
+.cvfila2 {
+    display: inline-block;
+}
 
 /* page contacto */
 
 .gridContacto {
     display: grid;  
     grid-template-areas:    "menu"
-                            "imgContacto"
-                            "datosContacto"
-                            "formContacto"   
+                            "boxContacto"
                             "footer"; 
+}
+
+.boxContacto {
+    display: grid;  
+    grid-template-areas:    "imgContacto"
+                            "datosContacto"  
+                            "formContacto" ; 
+}
+
+
+.boxdatosContacto {
+    height: 25vh;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .formContacto {
     padding-top: 0px;
 }
 
+.campoForm {
+    width: 18rem;
+   }
+
+    }
+
+    /* XS */
+
+@media  screen and (max-width:450px) {
+    
+    .tituloPrincipal {
+        padding-top: 30px;
+        font-size: 25px;
+    }
+    
+    #imagenHome {
+        height: 400px; 
+        width: 300px;
+        margin:auto;
+        display:block;
+    }
+
+    .imagenPrincipal {
+        height: 500px; 
+    }
+    
+    .bioTextos {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+
+    .boxdatosContacto {
+        height: 20vh;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .datosContacto {
+        font-size: 20px;
+    } 
+
+    .form {
+        font-size: 15px;
+    }
+
+    .footer__derechos {
+        font-size: 10px;
+       
+    }
+
+    .btn { 
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    /* page reel */
+
+    .boxReel {
+        padding-bottom: 200px;
+        padding-top: 30px;
+    }
+
+    .reel {
+        padding: 20px;
+        padding-top: 200px;
+    }
+
+}
+
+@media  screen and (max-width: 350px) {
+    .header {
+        font-size: 10px;
+    }
+    .tituloPrincipal {
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    
+    #imagenHome {
+        height: 250px; 
+        width: 200px;
+        margin:auto;
+        display:block;
+    }
+
+    .imagenPrincipal {
+        height: 400px; 
+    }
+    
+
+    .boxdatosContacto {
+        height: 30vh;
+    }
 
 
+    .btn { 
+        padding-left: 8px;
+        padding-right: 8px;
 
+    }
+
+    /* page reel */
+
+    .reel {
+        padding: 5px;
+        padding-top: 100px;
+    }
+
+    .campoForm {
+        width: 10rem;
+       }
+
+    /* page cv */
+
+       .textosCv {
+        font-size: 15px;
+    }
+
+    /* footer */
+    
+    .form {
+        font-size: 15px;
+    }
+    
+    .footer__contacto {
+        font-size: 15px;
+    }
 }

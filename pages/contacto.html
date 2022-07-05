@@ -52,56 +52,46 @@
             <!--Fin de la barra de navegación-->
         </header>
         <!--Fin de la cabecera de la página-->
-        <div class="imgContacto">  
-            <div class="boximgContacto">            
-                <img class="idimgContacto" src="./../assets/Imagendraft3.jpg" alt="fiorella" title="Fiorella"/>
+        <div class="boxContacto">
+            <div class="imgContacto">  
+                <div class="boximgContacto">            
+                    <img class="idimgContacto" src="./../assets/Imagendraft3.jpg" alt="fiorella" title="Fiorella"/>
+                </div>
             </div>
-        </div>
-        <div class="datosContacto">
-            <div class="boxdatosContacto">
-                <ul>
-                    <li>Fiorella Roetto</li>
-                    <li>Email: fiorella.roetto@gmail.com</li>
-                    <li>Celular: +5491156514549</li>
-                </ul>
+            <div class="datosContacto">
+                <div class="boxdatosContacto">
+                    <ul>
+                        <li>Fiorella Roetto</li>
+                        <li>Email: fiorella.roetto@gmail.com</li>
+                        <li>Celular: +5491156514549</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="formContacto">
-            <div class="boxForm">
-                <form>
-                    <label for="nombre">
-                        Nombre*
-                    </label>
-                    <input type="text" id="nombre" />
-                    <br />
-                    <label for="email">
-                        E-mail*
-                    </label>
-                    <input type="email" id="email" />
-                    <br />
-                    <label for="telefono">
-                        Teléfono
-                    </label>
-                    <input type="text" id="telefono" />
-                    <br />
-                    <label for="mensaje">
-                        Mensaje*
-                    </label>
-                    <textarea id="mensaje" rows="10" cols="10"></textarea>
-                    <br />
-                    <input type="submit" class="btn"/>
-                    <input type="reset" class="btn"/>
-                    <br />
-                    <div>
-                        <input type="checkbox" />
-                        <label>
-                            Quiero recibir noticias y actualizaciones!
-                        </label>
-                    </div>
-                    <br />
-                </form>
+            <div class="formContacto">
+                <div class="boxForm">
+                    <form action="">
+                        <label for="nombre">Nombre*</label><br/>
+                        <input type="text" class="campoForm" id="nombre" /> <br/>
+                        <label for="email">E-mail*</label><br/>
+                        <input type="email" class="campoForm" id="email" /><br/>
+                        <label for="telefono">Teléfono</label><br/>
+                        <input type="text" class="campoForm" id="telefono" /><br/>
+                        <label for="mensaje">Mensaje*</label><br/>
+                        <textarea class="campoForm" id="mensaje" rows="10" cols="10"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" id="opt-in"/>
+                            <label for="opt-in">
+                                Quiero recibir noticias y actualizaciones!
+                            </label>
+                        </div>
+                        <div class="boxBtn">    
+                            <input type="submit" class="btn" value=" Enviar Datos "/>
+                            <input type="reset" class="btn" value=" Borrar Datos "/>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+        </div> 
         <!-- Inicia Footer -->
         <footer class="footer">
             <form class="form">
@@ -110,7 +100,7 @@
                 </label>
                 <!-- <div class="footer__Novedades"></div> VER SI NO SIRVE ELIMINAR-->
                 <div>   
-                    <input type="email" id="recibirEmail" />
+                    <input type="email" class="campoForm" id="recibirEmail" />
                     <input type="submit" class="btn"/>    
                 </div>     
             </form>

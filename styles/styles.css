@@ -8,12 +8,11 @@
     list-style: none;
 }
 
-html {
-    font-family: 'Oswald', sans-serif;
-}
-
 body {
     background-color:  #000000;
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    border: solid tomato;
 }
 
 a { /* Afecta a todos los vinculos */
@@ -27,7 +26,7 @@ a { /* Afecta a todos los vinculos */
                             "footer             footer          footer";
 }
 
-.header{
+.header {
     grid-area: menu;
     background-color: #2b2929;
     font-size: 30px;
@@ -117,7 +116,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     color:  #FFFFFF;
     margin: 5px;
     padding: 20px;  
@@ -129,31 +128,35 @@ nav {
 }
 
 .footer {
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 0px;
     grid-area: footer;
-    height: fit-content;
+    border: solid green;
 }
 
-.form{
+.form {
+    font-size: 20px;
+    border: solid aqua;
     color: #FFFFFF;
 }
+
 
 .btn { 
     color: #000000; 
     background-color: #A937F9;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 16px;
-    border-radius: 17px;
+    font-size: 20px;
+    border-radius: 16px;
     padding: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #ffffff; 
 }
 
 .packageSocialMediaIcon {
     text-align: center;
+    border: solid yellow;
 }
 
 .socialMediaIcon {
@@ -167,6 +170,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 20px;
+    border: solid blue;
 }
 
 .footer__derechos {
@@ -180,7 +185,9 @@ nav {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
+    border: solid salmon;
     color:  #FFFFFF
+   
 }
 
 .gridFotos {
@@ -222,15 +229,22 @@ nav {
                             "footer";
 }
 
-.reel {
+.boxReel {
     padding-top: 60px;
     padding-bottom: 20px;
     width: 100%; 
     height: 365px;
-    background-color: #3d3a3a;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    background-color: #3d3a3a; 
+    border: solid yellow;
     grid-area: reel;  
+}
+
+.reel {
+    padding: 100px;
+    text-align: center;
+
 }
 
 
@@ -239,20 +253,34 @@ nav {
     grid-template-areas:    "menu"
                             "cv"   
                             "footer";
-}                        
+}
+
+
 
 .cv {
     padding-top: 60px;
     margin: 30px;
     display: grid;  
-    grid-template-areas:    "imagencv1       textocv1"
-                            "imagencv2       textocv2";
+    grid-template-areas:    "cvfila1"
+                            "cvfila2";
 }
 
-.boximageCV {
+.cvfila1 {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
+    grid-area: cvfila1;
+}
 
+.cvfila2 {
+    display: flex;
+    justify-content: space-around;
+    grid-area: cvfila2;
+}
+
+.cardcv {
+    display: inline-block;
+    text-align: center;
 }
 
 .imagenCv { 
@@ -263,7 +291,7 @@ nav {
 .textosCv {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     text-align: justify;
     margin: 20px;
     color:  #FFFFFF;
@@ -289,9 +317,15 @@ nav {
 .gridContacto {
     display: grid;  
     grid-template-areas:    "menu           menu"
-                            "imgContacto    formContacto"
-                            "datosContacto  formContacto"   
+                            "boxContacto    boxContacto"
                             "footer         footer"; 
+}
+
+.boxContacto {
+    grid-area: boxContacto;
+    display: grid;  
+    grid-template-areas:    "imgContacto    formContacto"
+                            "datosContacto  formContacto" ; 
 }
 
 .imgContacto {
@@ -322,20 +356,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: lavender;
-    border-radius: 20px;
-    border-style: solid;
-    width: 250px; 
-    height:150px;
+    border-radius: 5px;
+    border: 1.5px solid #CC84FF;
+    width: 300px; 
+    height:200px;
     color:  #FFFFFF;
 }
 
 .datosContacto {
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     grid-area: datosContacto;
 } 
 
@@ -347,6 +379,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1.5px solid #CC84FF;
+    border-radius: 5px;
+    color:  #FFFFFF;
+    padding: 25px;
+    font-size: 20px;
 }
 
 .formContacto {
@@ -354,14 +391,43 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: formContacto;
-    color:  #FFFFFF
+    grid-area: formContacto; 
+}
+
+input, textarea {
+    border: none;
+    outline: none;
 
 }
 
 form {
     color:  #FFFFFF 
 }
+
+.checkbox {
+    padding-top: 10px;
+}
+
+.boxBtn {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 2px #CC84FF;
+  }
+
+.campoForm {
+ border: solid 1px #ccc;
+ margin: 5px;
+ padding: 5px;
+ width: 25rem;
+}
+
+.campoForm:focus {
+    border: solid 2px #CC84FF;
+   }
 
 .datosContacto ul {
     color:  #FFFFFF
