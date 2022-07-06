@@ -64,10 +64,20 @@ body {
 .reel {
   background-color: #6d6d6d;
   margin-top: 60px;
+  height: 80vh;
+}
+.reel .reelYoutube {
+  border: solid red;
 }
 
 .cv {
   margin-top: 60px;
+  padding: 10px;
+  border: solid green;
+}
+.cv .miCard {
+  border: solid saddlebrown;
+  padding: 20px;
 }
 
 .boxContacto {
@@ -86,5 +96,10 @@ body {
     justify-content: center;
     display: grid;
     grid-template-areas: "cardContacto" "formContacto";
+  }
+
+  .miCard {
+    border: solid salmon;
+    padding: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

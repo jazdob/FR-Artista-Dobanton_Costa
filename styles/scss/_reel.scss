@@ -1,4 +1,9 @@
 .reel {
     background-color: $gris-claro;
     margin-top: 60px;
+    height: 80vh;
+
+    .reelYoutube{
+        border: solid red;
+    }
 }
