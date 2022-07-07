@@ -1,11 +1,22 @@
 .cv {
     margin-top: 60px;
     padding: 10px;
-    border: solid green;
+    display: flex;
+    justify-content: center;
+
 
     .miCard {
-            border: solid saddlebrown;
             padding: 20px;
-    }
+
+
+        .boxImgCv {
+            text-align: justify;
+
+            .imgCv {
+                padding: 20px;
+            }
+        }
+
+        }
 }
 

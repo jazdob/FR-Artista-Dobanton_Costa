@@ -7,11 +7,15 @@
         display: grid;  
         grid-template-areas:    "cardContacto"
                                 "formContacto"
+                            }
+
+    .datosContacto {
+        margin-bottom: 30px;
     }
 
-
     .miCard {
-        border: solid salmon;
         padding: 20px;
     }
 }
+
+    
