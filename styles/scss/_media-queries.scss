@@ -1,7 +1,23 @@
 @media  screen and (max-width:648px) {
 
+     /* NavBar */
+    .miNav{
+        font-size: 18px;
+    }
+
+    /* BIO */
+    .boxSectionBio{
+        margin: 2%;
+        #bioFio {
+            .tituloBio{
+                    margin-top: 10%;
+                    font-size: 250%;
+
+            }
+    }
+    }
+
     /* Contacto */
-    
     .gridContacto {
         justify-content: center;
         display: grid;  
@@ -16,6 +32,7 @@
     .miCard {
         padding: 20px;
     }
+
 }
 
     

@@ -1,11 +1,22 @@
 
-.miHeader {
+.miNav{
+    /*border: solid blue;*/
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
     font-weight: bold;
-    .barrita {  
-    background-color: $gris-topo;
-    a {
-        color: $withe !important;
-    
+    /*background-color: $black !important;*/
+    .barrita {
+        /*border: solid green;*/
+        .barritajr {
+            /*border: solid yellow;*/
+            .barritabb {
+                /*border: solid fuchsia;*/
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
     }
-}
 }

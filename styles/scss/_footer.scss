@@ -1,18 +1,45 @@
-.socialMediaIcon {
-    text-align: center;
+.miFooter {
+    color:  $withe;
+    padding: 2%;
+    padding-bottom: 0%;
+    .formFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        .formEmail {
+            width: 80%;
+            .inputFooter {
+                border-radius: 20px;
+            }
+        }
+        .btnFooter {
+            text-align: center;
+            width: 20%;
+        }
+    }
+    .socialMediaIcon {
+        padding-top: 1%;
+        display: flex;  
+        flex-direction: row; 
+        justify-content: center;
+        .boxIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 15%;
+            .miIcon {
+                font-size: 180%;
+                opacity: 70%;
+                color: $withe;
+            }
+        }
+    }
+    .footer__derechos {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+        font-size: 80%;
+    } 
 }
-
-.footer__derechos {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    color:  $black;
-} 
-
