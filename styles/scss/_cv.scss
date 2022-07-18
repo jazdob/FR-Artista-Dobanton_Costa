@@ -2,21 +2,36 @@
     margin-top: 60px;
     padding: 10px;
     display: flex;
-    justify-content: center;
-
-
+    justify-content: center; 
     .miCard {
             padding: 20px;
-
-
         .boxImgCv {
             text-align: justify;
-
+            background-color: $black;
+            color: $withe;
+            border: solid $gris-claro;
             .imgCv {
-                padding: 20px;
+                padding: 5%;
             }
+            .miCarBody {
+                padding-top: 4%;
+                .miCardTitulo {
+                    padding-bottom: 6%;
+                    font-weight: bold;
+                }
+            }
+            .boxMasCv {
+                font-size: larger;
+                font-weight: bold;
+                text-align:end;
+                padding: 4%;
+                .linkMas {
+                        color: $lila-power;
+                }
+            }
+            
         }
 
-        }
+    }
 }
 

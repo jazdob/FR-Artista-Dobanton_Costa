@@ -153,9 +153,28 @@
 }
 .cv .miCard .boxImgCv {
   text-align: justify;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: solid #6d6d6d;
 }
 .cv .miCard .boxImgCv .imgCv {
-  padding: 20px;
+  padding: 5%;
+}
+.cv .miCard .boxImgCv .miCarBody {
+  padding-top: 4%;
+}
+.cv .miCard .boxImgCv .miCarBody .miCardTitulo {
+  padding-bottom: 6%;
+  font-weight: bold;
+}
+.cv .miCard .boxImgCv .boxMasCv {
+  font-size: larger;
+  font-weight: bold;
+  text-align: end;
+  padding: 4%;
+}
+.cv .miCard .boxImgCv .boxMasCv .linkMas {
+  color: #A937F9;
 }
 
 .boxContacto {
