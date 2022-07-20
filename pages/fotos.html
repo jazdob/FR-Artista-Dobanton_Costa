@@ -45,13 +45,13 @@
         <!--Cabecera de la página-->
         <header>
             <!--Barra de navegación-->
-            <nav class="navbar navbar-expand-lg navbar-expand-md bg-light fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-expand-md fixed-top miNav">
                 <div class="container-fluid barrita">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                  <div class="collapse navbar-collapse barritajr" id="navbarNav">
+                    <ul class="navbar-nav barritabb">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./../index.html">HOME</a>
                       </li>
@@ -109,25 +109,30 @@
             </div>
         </section>
         <!-- Inicia Footer -->
-        <footer>
+        <footer class="miFooter">
             <form>
-                <label>
-                    Para recibir noticias y actualizaciones, regístrese con su dirección de correo electrónico a continuación.
-                </label>
-                <div>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-                    <input type="submit"/>
-                </div>  
+              <label>
+                Para recibir noticias y actualizaciones, regístrese con su dirección de correo electrónico a continuación.
+              </label>
+              <div class="formFooter">
+                <div class="formEmail">
+                  <input type="email" class="form-control inputFooter" id="exampleFormControlInput1" placeholder="E-mail">
+                </div>
+                <div class="btnFooter">
+                  <input type="submit"/>
+                </div>
+              </div>  
             </form>
             <div class="socialMediaIcon">
-                <a href="https://www.youtube.com/channel/UCMGypMiW1E7PmSBw8vI61Tg/featured/" target="_blank"><i class="bi bi-youtube"></i></a>
-                <a href="https://www.instagram.com/firoetto/" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.tiktok.com/@firoetto/" target="_blank"><i class="bi bi-tiktok"></i></a>
-                <a href="./contacto.html">CONTACTO</a>
+              <div class="boxIcons">
+                <a href="https://www.youtube.com/channel/UCMGypMiW1E7PmSBw8vI61Tg/featured/" target="_blank"><i class="bi bi-youtube miIcon"></i></a>
+                <a href="https://www.instagram.com/firoetto/" target="_blank"><i class="bi bi-instagram miIcon"></i></a>
+                <a href="https://www.tiktok.com/@firoetto/" target="_blank"><i class="bi bi-tiktok miIcon"></i></a>
+              </div>
             </div>
             <div class="footer__derechos">
-                <P>Copyryght© 2022 Fiorella Roetto.</P> 
-                <P>Reservados todos los derechos.</P>
+              <p>Copyryght© 2022 Fiorella Roetto.</p> 
+              <p>Reservados todos los derechos.</p>
             </div>
         </footer>
         <!-- Fin del footer  -->
