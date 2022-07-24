@@ -1,3 +1,19 @@
+.miBoton {
+  border: solid #A937F9;
+  padding: 2%;
+  width: 7rem;
+  border-width: 1px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #A937F9;
+  transition: background-color 0.5s;
+}
+.miBoton:hover {
+  background-color: #c38beb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +26,6 @@
 }
 
 .miNav {
-  /*border: solid blue;*/
   margin: 0px;
   padding: 0px;
   font-size: 25px;
@@ -19,16 +34,17 @@
 }
 .miNav .barrita {
   margin: 1.5%;
-  /*border: solid green;*/
-}
-.miNav .barrita .barritajr {
-  /*border: solid yellow;*/
 }
 .miNav .barrita .barritajr .barritabb {
-  /*border: solid fuchsia;*/
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.miNav .barrita .barritajr .barritabb .itemDelMenu {
+  transition: color 0.3s;
+}
+.miNav .barrita .barritajr .barritabb .itemDelMenu:hover {
+  color: #A937F9;
 }
 
 .miFooter {
@@ -40,8 +56,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
 .miFooter .formFooter .formEmail {
   width: 80%;
@@ -49,12 +65,13 @@
 .miFooter .formFooter .formEmail .inputFooter {
   border-radius: 20px;
 }
-.miFooter .formFooter .btnFooter {
+.miFooter .formFooter .boxBtnFooter {
   text-align: center;
   width: 20%;
 }
 .miFooter .socialMediaIcon {
   padding-top: 1%;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,12 +80,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 15%;
+  width: 25%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .miFooter .socialMediaIcon .boxIcons .miIcon {
   font-size: 180%;
-  opacity: 70%;
+  opacity: 80%;
   color: #FFFFFF;
+  transition: opacity 0.2s;
+}
+.miFooter .socialMediaIcon .boxIcons .miIcon:hover {
+  opacity: 100%;
 }
 .miFooter .footer__derechos {
   display: flex;
@@ -77,122 +100,151 @@
   font-size: 80%;
 }
 
-.boxBanner {
-  /*margin-top: 60px;*/
-}
-
-.boxImagenPrincipal {
-  /*background-color: $black;*/
-}
-
-.imagenPrincipal {
+.contenedorHome .boxBannerMasImg .boxImagenPrincipal .imagenPrincipal {
   width: 60%;
 }
-
-.boxSectionBio {
+.contenedorHome .boxSectionBio {
   color: #FFFFFF;
-  padding: 2%;
+  padding: 3%;
   padding-bottom: 0%;
 }
-.boxSectionBio #bioFio {
-  padding-top: 2%;
+.contenedorHome .boxSectionBio #bioFio {
+  padding-top: 3%;
   padding-bottom: 2%;
 }
-.boxSectionBio #bioFio .tituloBio {
+.contenedorHome .boxSectionBio #bioFio .tituloBio {
   padding-top: 4%;
   font-size: 400%;
   font-weight: bold;
 }
-.boxSectionBio .boxTextos {
+.contenedorHome .boxSectionBio .boxTextos {
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
-.boxSectionBio .boxTextos .boxParrafos {
+.contenedorHome .boxSectionBio .boxTextos .boxParrafos {
   text-align: justify;
   padding-bottom: 2%;
 }
-.boxSectionBio .boxTextos .boxParrafos p {
+.contenedorHome .boxSectionBio .boxTextos .boxParrafos p {
   margin-bottom: 0%;
 }
-.boxSectionBio .boxTextos .circulito {
+.contenedorHome .boxSectionBio .boxTextos .circulito {
   width: 100%;
   font-size: 130%;
   text-align: center;
   color: #A937F9;
 }
 
-.galeria {
-  margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+.miGaleria {
+  margin-top: 6%;
+  padding-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 6%;
 }
-.galeria img {
+.miGaleria .boxImgGaleria {
+  padding: 1%;
+}
+.miGaleria .boxImgGaleria img {
   width: 100%;
 }
-.galeria img:hover {
-  border: 2px solid #A937F9;
+.miGaleria .boxImgGaleria img:hover {
+  border: 2px solid #6d6d6d;
 }
 
-.reel {
+.boxReel {
   background-color: #6d6d6d;
-  margin-top: 60px;
+  padding-top: 10%;
   height: 80vh;
 }
-.reel .reelYoutube {
+.boxReel .reelYoutube {
   border: solid red;
 }
 
-.cv {
+.bodyBox .cv {
+  margin: 0%;
   margin-top: 5%;
   padding: 3%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
-.cv .miCard {
+.bodyBox .cv .miCard {
   padding: 2%;
   padding-top: 3%;
 }
-.cv .miCard .boxImgCv {
+.bodyBox .cv .miCard .boxImgCv {
   text-align: justify;
   background-color: #000000;
   color: #FFFFFF;
-  border: solid #6d6d6d;
+  border: solid #FFFFFF;
+  border-width: 0.5px;
+  margin-top: 4%;
 }
-.cv .miCard .boxImgCv .imgCv {
+.bodyBox .cv .miCard .boxImgCv .imgCv {
   padding: 5%;
 }
-.cv .miCard .boxImgCv .miCarBody {
+.bodyBox .cv .miCard .boxImgCv .miCardBody {
   padding-top: 4%;
 }
-.cv .miCard .boxImgCv .miCarBody .miCardTitulo {
+.bodyBox .cv .miCard .boxImgCv .miCardBody .miCardTitulo {
   padding-bottom: 6%;
   font-weight: bold;
 }
-.cv .miCard .boxImgCv .boxMasCv {
+.bodyBox .cv .miCard .boxImgCv .boxMasCv {
   font-size: larger;
   font-weight: bold;
   text-align: end;
   padding: 4%;
 }
-.cv .miCard .boxImgCv .boxMasCv .linkMas {
+.bodyBox .cv .miCard .boxImgCv .boxMasCv .linkMas {
   color: #A937F9;
 }
 
 .boxContacto {
-  margin-top: 60px;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
 }
 .boxContacto .gridContacto {
-  width: 60%;
+  width: 80%;
+  color: #FFFFFF;
 }
 .boxContacto .gridContacto .datosContacto {
   grid-area: cardContacto;
+  padding: 3%;
+  border: 0.5px solid #A937F9;
+  margin-right: 10%;
+  background-color: #000000;
+}
+.boxContacto .gridContacto .datosContacto .imgContacto {
+  padding: 6%;
+  border-radius: 20px;
+}
+.boxContacto .gridContacto .datosContacto .cardDatosContacto {
+  text-align: center;
+  font-size: 20px;
+}
+.boxContacto .gridContacto .datosContacto .cardDatosContacto .nombreFriore {
+  font-size: 35px;
 }
 .boxContacto .gridContacto .formularioContacto {
   grid-area: formContacto;
+  padding: 3%;
+  border: 0.5px solid #A937F9;
+  border-radius: 6px;
+}
+.boxContacto .gridContacto .formularioContacto .boxTildesito {
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+.boxContacto .gridContacto .formularioContacto .boxTildesito .tildesito {
+  background-color: #A937F9;
+  border: #A937F9;
+}
+.boxContacto .gridContacto .formularioContacto .boxBotonesForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 648px) {
@@ -200,24 +252,53 @@
   .miNav {
     font-size: 18px;
   }
-  /* BIO */
-  .boxSectionBio {
+  /* HOME-BIO */
+  .contenedorHome {
+    padding-top: 10%;
+  }
+  .contenedorHome .boxSectionBio {
     margin: 2%;
   }
-  .boxSectionBio #bioFio .tituloBio {
+  .contenedorHome .boxSectionBio #bioFio .tituloBio {
     margin-top: 10%;
     font-size: 250%;
+  }
+  /* Fotos */
+  .miGaleria {
+    padding: 8%;
+  }
+  /* Reel */
+  /* CV */
+  .cv {
+    margin-top: 10%;
   }
   /* Contacto */
   .gridContacto {
     justify-content: center;
+    margin-top: 10%;
     display: grid;
     grid-template-areas: "cardContacto" "formContacto";
   }
-  .datosContacto {
-    margin-bottom: 30px;
+  .gridContacto .datosContacto {
+    margin-bottom: 10%;
   }
-  .miCard {
-    padding: 20px;
+  /* Botones */
+  .miBoton {
+    width: 6rem;
+  }
+  /* Footer */
+  .miFooter .formFooter {
+    margin-top: 2%;
+  }
+  .miFooter .formFooter .formEmail {
+    width: 60%;
+  }
+  .miFooter .formFooter .boxBtnFooter {
+    text-align: center;
+    width: 40%;
+  }
+  .miFooter .socialMediaIcon .boxIcons {
+    width: 50%;
+    font-size: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

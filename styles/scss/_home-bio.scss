@@ -1,47 +1,43 @@
-.boxBanner {
-        /*margin-top: 60px;*/
-}
-
-.boxImagenPrincipal {
-        /*background-color: $black;*/
-}
-
-.imagenPrincipal {
-        width: 60%;
-}
-
-.boxSectionBio {
-        color: $withe;
-        padding: 2%;
-        padding-bottom: 0%;
-        #bioFio {
-                padding-top: 2%;
-                padding-bottom: 2%;
-                .tituloBio{
-                        padding-top: 4%;
-                        font-size: 400%;
-                        font-weight: bold;
-                }
-        }
-        .boxTextos{
-                margin-bottom: 0%;
-                padding-bottom: 0%;
-                .boxParrafos {
-                        text-align: justify;
-                        padding-bottom: 2%;
-                        
-                        p {
-                                margin-bottom: 0%;
+.contenedorHome {
+        .boxBannerMasImg {
+                .boxImagenPrincipal {
+                        .imagenPrincipal {
+                                width: 60%;
                         }
                 }
-                .circulito {
-                        width: 100%;
-                        font-size: 130%;
-                        text-align: center;
-                        color: $lila-power;
-                }
         }
-        
+        .boxSectionBio {
+                color: $withe;
+                padding: 3%;
+                padding-bottom: 0%;
+                #bioFio {
+                        padding-top: 3%;
+                        padding-bottom: 2%;
+                        .tituloBio{
+                                padding-top: 4%;
+                                font-size: 400%;
+                                font-weight: bold;
+                                }
+                        }
+                .boxTextos{
+                        margin-bottom: 0%;
+                        padding-bottom: 0%;
+                        .boxParrafos {
+                                text-align: justify;
+                                padding-bottom: 2%;
+                                        p {
+                                                margin-bottom: 0%;
+                                        }
+                        }
+                        .circulito {
+                                width: 100%;
+                                font-size: 130%;
+                                text-align: center;
+                                color: $lila-power;
+                         }
+                }
+                        
+
+        }
 
 }
-

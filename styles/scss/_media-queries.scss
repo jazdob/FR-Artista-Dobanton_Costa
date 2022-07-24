@@ -1,38 +1,74 @@
 @media  screen and (max-width:648px) {
 
      /* NavBar */
-    .miNav{
+    .miNav {
         font-size: 18px;
     }
 
-    /* BIO */
-    .boxSectionBio{
-        margin: 2%;
-        #bioFio {
-            .tituloBio{
-                    margin-top: 10%;
-                    font-size: 250%;
-
-            }
+    /* HOME-BIO */
+    .contenedorHome {
+        padding-top: 10%;
+        .boxSectionBio {
+            margin: 2%;
+            #bioFio {
+                .tituloBio {
+                        margin-top: 10%;
+                        font-size: 250%;
+                }
+        }
+        }
     }
+
+    /* Fotos */
+    .miGaleria {
+        padding: 8%;
+
+    }
+     /* Reel */
+
+
+     /* CV */
+     .cv {
+        margin-top: 10%;
     }
 
+    
     /* Contacto */
     .gridContacto {
         justify-content: center;
+        margin-top: 10%;
         display: grid;  
         grid-template-areas:    "cardContacto"
-                                "formContacto"
-                            }
-
-    .datosContacto {
-        margin-bottom: 30px;
+                                "formContacto";
+                                
+        .datosContacto {
+            margin-bottom: 10%;
+        }
     }
 
-    .miCard {
-        padding: 20px;
+    /* Botones */
+    .miBoton {
+        width: 6rem;
     }
 
+    /* Footer */
+    .miFooter {
+        .formFooter{
+            margin-top: 2%;
+                .formEmail {
+                    width: 60%;
+                }
+       
+                .boxBtnFooter {
+                    text-align: center;
+                    width: 40%;
+                }
+            }
+        .socialMediaIcon {
+            .boxIcons {
+                width: 50%;
+                font-size: 100%;
+            }
+        }
+    }
 }
-
-    

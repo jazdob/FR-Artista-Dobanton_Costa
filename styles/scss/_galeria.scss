@@ -1,16 +1,17 @@
-.galeria {
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    img {
+.miGaleria {
+    margin-top: 6%;
+    padding-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 6%;
+    .boxImgGaleria{
+        padding: 1%;
+        img {
+            width: 100%;
 
-        width: 100%;
-
-        &:hover {
-
-            border: 2px solid $lila-power
-
+            &:hover {
+                border: 2px solid $gris-claro
+            }
         }
     }
 }

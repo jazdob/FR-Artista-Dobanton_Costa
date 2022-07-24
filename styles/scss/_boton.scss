@@ -1,0 +1,16 @@
+.miBoton {
+    border: solid $lila-power;
+    padding: 2%;
+    width: 7rem;
+    border-width: 1px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $withe;
+    background-color: $lila-power;
+    transition: background-color .5s;
+    &:hover {
+        background-color: $lila-light;
+    }
+}
+

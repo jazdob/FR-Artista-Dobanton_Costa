@@ -1,5 +1,4 @@
 .miNav{
-    /*border: solid blue;*/
     margin: 0px;
     padding: 0px;
     font-size: 25px;
@@ -7,15 +6,18 @@
     background-color: $black !important;
     .barrita {
         margin: 1.5%;
-        /*border: solid green;*/
         .barritajr {
-            /*border: solid yellow;*/
             .barritabb {
-                /*border: solid fuchsia;*/
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                
+          
+                .itemDelMenu {
+                    transition: color .3s;
+                    &:hover {
+                        color: $lila-power;
+                    }
+                }
             }
         }
     }

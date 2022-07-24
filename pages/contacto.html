@@ -53,22 +53,22 @@
                 <div class="collapse navbar-collapse barritajr" id="navbarNav">
                   <ul class="navbar-nav barritabb">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./../index.html">HOME</a>
+                      <a class="nav-link active itemDelMenu" aria-current="page" href="./../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="./../#bioFio">BIO</a>
+                      <a class="nav-link active itemDelMenu" href="./../#bioFio">BIO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="./fotos.html">FOTOS</a>
+                      <a class="nav-link active itemDelMenu" href="./fotos.html">FOTOS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./reel.html">REEL</a>
+                      <a class="nav-link active itemDelMenu" aria-current="page" href="./reel.html">REEL</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./cv.html">CV</a>
+                      <a class="nav-link active itemDelMenu" aria-current="page" href="./cv.html">CV</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                      <a class="nav-link active itemDelMenu" aria-current="page" href="./contacto.html">CONTACTO</a>
                     </li>
                   </ul>
                 </div>
@@ -79,12 +79,12 @@
         <!--Fin de la cabecera de la página-->
         <div class="container boxContacto">
             <div class="row gridContacto">  
-                <div class="card col datosContacto" style="width: 18rem;">
-                    <img src="./../assets/camisoli.jpg" class="card-img-top imgContacto" alt="fiorella">
-                    <div class="card-body">
-                    <p class="card-text">Fiorella Roetto</p>
-                    <p class="card-text">Email: fiorella.roetto@gmail.com</p>
-                    <p class="card-text">Celular: +5491156514549</p>
+                <div class="card col datosContacto">
+                    <img class="card-img-top imgContacto" src="./../assets/camisoli.jpg" alt="fiorella">
+                    <div class="card-body cardDatosContacto">
+                      <p class="card-text nombreFriore">Fiorella Roetto</p>
+                      <p class="card-text">Email: fiorella.roetto@gmail.com</p>
+                      <p class="card-text">Celular: +5491156514549</p>
                     </div>
                 </div>
                 <div class="col formularioContacto">
@@ -98,21 +98,21 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+54 011 xxxxxxxx">
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+54 011 xxxxxxxx">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje*</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tu mensaje" rows="3"></textarea>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <div class="form-check boxTildesito">
+                        <input class="form-check-input tildesito" type="checkbox" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
                                 Quiero recibir noticias y actualizaciones!
                         </label>
                     </div>
-                    <div>
-                        <input type="submit"/>
-                        <input type="reset"/>
+                    <div class="boxBotonesForm">
+                        <input class="btn miBoton" type="submit"/>
+                        <input class="btn miBoton" type="reset"/>
                     </div>    
                 </div>
             </div>
@@ -127,8 +127,8 @@
               <div class="formEmail">
                 <input type="email" class="form-control inputFooter" id="exampleFormControlInput1" placeholder="E-mail">
               </div>
-              <div class="btnFooter">
-                <input type="submit"/>
+              <div class="boxBtnFooter">
+                <input class="miBoton" type="submit"/>
               </div>
             </div>  
           </form>

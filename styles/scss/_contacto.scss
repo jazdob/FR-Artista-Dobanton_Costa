@@ -1,17 +1,50 @@
 .boxContacto {
-    margin-top: 60px;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     justify-content: center;
     .gridContacto {
-        width: 60%;
+        width: 80%;
+        color: $withe;
+
         .datosContacto {
             grid-area: cardContacto;
+            padding: 3%;
+            border: 0.5px solid $lila-power;
+            margin-right: 10%;
+            background-color: $black;
             .imgContacto {
-
+                padding: 6%;
+                border-radius: 20px;
+            }
+            .cardDatosContacto {
+                text-align: center;
+                font-size: 20px;
+                .nombreFriore {
+                    font-size: 35px;
+                }
             }
         }
         .formularioContacto {
             grid-area: formContacto;
+            padding: 3%;
+            border: 0.5px solid $lila-power;
+            border-radius: 6px;
+            
+            .boxTildesito {
+                padding-top: 2%;
+                padding-bottom: 10%;
+                .tildesito {
+                    background-color: $lila-power;
+                    border: $lila-power;
+                }
+            }
+            .boxBotonesForm {
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-around;
+            }
         }
     }
 }
