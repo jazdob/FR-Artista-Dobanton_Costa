@@ -7,11 +7,12 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #A937F9;
+  background-color: #c38beb;
   transition: background-color 0.5s;
 }
 .miBoton:hover {
-  background-color: #c38beb;
+  background-color: #A937F9;
+  cursor: url(././../assets/cursorclic.png), auto;
 }
 
 * {
@@ -23,6 +24,10 @@
 .bodyBox {
   background-color: #000000;
   font-family: "Oswald", sans-serif;
+  cursor: url(././../assets/cursorlindo.png), auto;
+}
+.bodyBox a {
+  cursor: url(././../assets/cursorclic.png), auto;
 }
 
 .miNav {

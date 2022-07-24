@@ -7,10 +7,12 @@
     text-transform: uppercase;
     font-weight: bold;
     color: $withe;
-    background-color: $lila-power;
+    background-color: $lila-light;
     transition: background-color .5s;
     &:hover {
-        background-color: $lila-light;
+        background-color: $lila-power;
+        cursor: url(././../assets/cursorclic.png), auto;
+        
     }
 }
 
