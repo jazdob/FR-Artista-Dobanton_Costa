@@ -236,8 +236,13 @@
 
 .boxReel {
   background-color: #6d6d6d;
-  padding-top: 10%;
+  border: solid blue;
+  margin-top: 5%;
+  padding-top: 9%;
   height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .boxReel .reelYoutube {
   border: solid red;
@@ -364,6 +369,12 @@
     top: 60px;
   }
   /* Reel */
+  .boxReel {
+    padding-top: 15%;
+  }
+  .boxReel .reelYoutube {
+    border: solid rgb(0, 225, 255);
+  }
   /* CV */
   .cv {
     margin-top: 10%;
