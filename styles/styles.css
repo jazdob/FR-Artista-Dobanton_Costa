@@ -26,6 +26,9 @@
   font-family: "Oswald", sans-serif;
   cursor: url(././../assets/cursorlindo.png), auto;
 }
+.bodyBox label {
+  cursor: url(././../assets/cursorlindo.png), auto;
+}
 .bodyBox a {
   cursor: url(././../assets/cursorclic.png), auto;
 }
@@ -67,8 +70,10 @@
 .miFooter .formFooter .formEmail {
   width: 80%;
 }
-.miFooter .formFooter .formEmail .inputFooter {
+.miFooter .formFooter .formEmail .miInputFooter {
   border-radius: 20px;
+  border: 1px solid #A937F9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
 }
 .miFooter .formFooter .boxBtnFooter {
   text-align: center;
@@ -125,6 +130,7 @@
 .contenedorHome .boxSectionBio .boxTextos {
   margin-bottom: 0%;
   padding-bottom: 0%;
+  font-size: 120%;
 }
 .contenedorHome .boxSectionBio .boxTextos .boxParrafos {
   text-align: justify;
@@ -147,14 +153,69 @@
   margin-right: 4%;
   margin-bottom: 6%;
 }
-.miGaleria .boxImgGaleria {
+.miGaleria .boxGaleria .boxImgGaleria {
   padding: 1%;
 }
-.miGaleria .boxImgGaleria img {
-  width: 100%;
+.miGaleria .boxGaleria .boxImgGaleria:hover {
+  filter: brightness(1.1);
 }
-.miGaleria .boxImgGaleria img:hover {
-  border: 2px solid #6d6d6d;
+.miGaleria .boxGaleria .boxImgGaleria img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.miGaleria .boxGaleria .boxImgGaleria img:hover {
+  border: 2px solid #FFFFFF;
+}
+
+.desfileBox {
+  position: fixed;
+  padding: 3%;
+  margin-top: 3%;
+  padding-top: 0%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+.desfileBox:target {
+  transform: scale(1);
+}
+.desfileBox .boxDesfileImg {
+  width: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desfileBox .miClose {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #c38beb;
+  transition: background-color 0.5s;
+}
+.desfileBox .miClose:hover {
+  color: #A937F9;
+}
+.desfileBox .miNext {
+  font-size: 25px;
+  margin-top: 10%;
+  padding: 2%;
+  font-weight: bold;
+  color: #c38beb;
+  transition: background-color 0.5s;
+}
+.desfileBox .miNext:hover {
+  color: #A937F9;
 }
 
 .boxReel {
@@ -200,7 +261,7 @@
   padding: 4%;
 }
 .bodyBox .cv .miCard .boxImgCv .boxMasCv .linkMas {
-  color: #A937F9;
+  color: #c38beb;
 }
 
 .boxContacto {
@@ -217,7 +278,7 @@
 .boxContacto .gridContacto .datosContacto {
   grid-area: cardContacto;
   padding: 3%;
-  border: 0.5px solid #A937F9;
+  border: 0.2px solid #A937F9;
   margin-right: 10%;
   background-color: #000000;
 }
@@ -238,13 +299,19 @@
   border: 0.5px solid #A937F9;
   border-radius: 6px;
 }
+.boxContacto .gridContacto .formularioContacto .miInputContacto {
+  border-radius: 20px;
+  border: 1px solid #A937F9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
+}
 .boxContacto .gridContacto .formularioContacto .boxTildesito {
   padding-top: 2%;
   padding-bottom: 10%;
 }
 .boxContacto .gridContacto .formularioContacto .boxTildesito .tildesito {
   background-color: #A937F9;
-  border: #A937F9;
+  border: 1px solid #A937F9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
 }
 .boxContacto .gridContacto .formularioContacto .boxBotonesForm {
   display: flex;
@@ -252,7 +319,7 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 768px) {
   /* NavBar */
   .miNav {
     font-size: 18px;
@@ -271,6 +338,9 @@
   /* Fotos */
   .miGaleria {
     padding: 8%;
+  }
+  .desfileBox .miClose {
+    top: 60px;
   }
   /* Reel */
   /* CV */

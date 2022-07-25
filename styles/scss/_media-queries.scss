@@ -1,4 +1,4 @@
-@media  screen and (max-width:648px) {
+@media  screen and (max-width:768px) {
 
      /* NavBar */
     .miNav {
@@ -22,7 +22,11 @@
     /* Fotos */
     .miGaleria {
         padding: 8%;
-
+    }
+    .desfileBox {
+        .miClose {
+            top: 60px;
+        }
     }
      /* Reel */
 
