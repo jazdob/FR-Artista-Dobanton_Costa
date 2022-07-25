@@ -22,8 +22,8 @@
 }
 
 .bodyBox {
-  background-color: #000000;
   font-family: "Oswald", sans-serif;
+  background-color: #000000;
   cursor: url(././../assets/cursorlindo.png), auto;
 }
 .bodyBox label {
@@ -98,7 +98,7 @@
   font-size: 180%;
   opacity: 80%;
   color: #FFFFFF;
-  transition: opacity 0.2s;
+  transition: opacity 0.3s;
 }
 .miFooter .socialMediaIcon .boxIcons .miIcon:hover {
   opacity: 100%;
@@ -110,20 +110,36 @@
   font-size: 80%;
 }
 
+.contenedorHome {
+  margin-top: 6%;
+}
+.contenedorHome .boxBannerMasImg .boxBanner {
+  height: 250px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background-image: url(././../assets/banner2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contenedorHome .boxBannerMasImg .boxImagenPrincipal {
+  background-color: rgb(17, 17, 17);
+}
 .contenedorHome .boxBannerMasImg .boxImagenPrincipal .imagenPrincipal {
   width: 60%;
 }
 .contenedorHome .boxSectionBio {
   color: #FFFFFF;
   padding: 3%;
+  padding-top: 0%;
   padding-bottom: 0%;
 }
 .contenedorHome .boxSectionBio #bioFio {
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 2%;
 }
 .contenedorHome .boxSectionBio #bioFio .tituloBio {
-  padding-top: 4%;
+  padding-top: 7%;
   font-size: 400%;
   font-weight: bold;
 }
@@ -327,6 +343,11 @@
   /* HOME-BIO */
   .contenedorHome {
     padding-top: 10%;
+  }
+  .contenedorHome .boxBannerMasImg .boxBanner {
+    height: 200px;
+    padding-top: 10%;
+    background-image: url(././../assets/banner22.png);
   }
   .contenedorHome .boxSectionBio {
     margin: 2%;

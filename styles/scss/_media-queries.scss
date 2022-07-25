@@ -8,6 +8,13 @@
     /* HOME-BIO */
     .contenedorHome {
         padding-top: 10%;
+        .boxBannerMasImg {
+            .boxBanner {
+                height: 200px;
+                padding-top: 10%;
+                background-image: url(././../assets/banner22.png);
+            }
+        }
         .boxSectionBio {
             margin: 2%;
             #bioFio {

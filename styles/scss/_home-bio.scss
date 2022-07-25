@@ -1,20 +1,34 @@
 .contenedorHome {
+        margin-top: 6%;
         .boxBannerMasImg {
+                .boxBanner {
+                        height: 250px;
+                        padding-bottom: 10%;
+                        padding-top: 10%;
+                        background-image: url(././../assets/banner2.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                }
+
                 .boxImagenPrincipal {
+                        background-color: rgb(17, 17, 17);
                         .imagenPrincipal {
                                 width: 60%;
                         }
                 }
+        
         }
         .boxSectionBio {
                 color: $withe;
                 padding: 3%;
+                padding-top: 0%;
                 padding-bottom: 0%;
                 #bioFio {
-                        padding-top: 3%;
+                        padding-top: 1%;
                         padding-bottom: 2%;
                         .tituloBio{
-                                padding-top: 4%;
+                                padding-top: 7%;
                                 font-size: 400%;
                                 font-weight: bold;
                                 }
