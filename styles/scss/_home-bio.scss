@@ -13,7 +13,7 @@
                 .boxImagenPrincipal {
                         background-color: rgb(17, 17, 17);
                         .imagenPrincipal {
-                                width: 60%;
+                                width: 40%;
                         }
                 }
         
@@ -27,6 +27,7 @@
                         padding-top: 1%;
                         padding-bottom: 2%;
                         .tituloBio{
+                                color: $lila-light;
                                 padding-top: 7%;
                                 font-size: 400%;
                                 font-weight: bold;

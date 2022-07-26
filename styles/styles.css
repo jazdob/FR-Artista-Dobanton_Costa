@@ -1,5 +1,5 @@
 .miBoton {
-  border: solid #A937F9;
+  border: solid #be78f0;
   padding: 2%;
   width: 7rem;
   border-width: 1px;
@@ -7,11 +7,11 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #c38beb;
+  background-color: #c39ae0;
   transition: background-color 0.5s;
 }
 .miBoton:hover {
-  background-color: #A937F9;
+  background-color: #be78f0;
   cursor: url(././../assets/cursorclic.png), auto;
 }
 
@@ -19,15 +19,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: url(././../assets/cursorlindo.png), auto;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #000000;
+  cursor: url(././../assets/cursorlindo.png), auto;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.863);
+  border-radius: 50px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #c39ae0;
 }
 
 .bodyBox {
   font-family: "Oswald", sans-serif;
   background-color: #000000;
-  cursor: url(././../assets/cursorlindo.png), auto;
-}
-.bodyBox label {
-  cursor: url(././../assets/cursorlindo.png), auto;
 }
 .bodyBox a {
   cursor: url(././../assets/cursorclic.png), auto;
@@ -41,10 +55,10 @@
   background-color: #000000 !important;
 }
 .miNav .barrita {
-  margin: 1.5%;
+  margin: 1.3%;
 }
 .miNav .barrita .barritajr .barritabb {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -52,7 +66,21 @@
   transition: color 0.3s;
 }
 .miNav .barrita .barritajr .barritabb .itemDelMenu:hover {
-  color: #A937F9;
+  color: #be78f0;
+}
+.miNav .barrita .barritajr .barritachild {
+  width: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0%;
+  padding-right: 0%;
+  font-size: 12px;
+}
+.miNav .barrita .barritajr .barritachild .itemDelIdioma {
+  transition: color 0.3s;
+}
+.miNav .barrita .barritajr .barritachild .itemDelIdioma:hover {
+  color: #be78f0;
 }
 
 .miFooter {
@@ -72,7 +100,7 @@
 }
 .miFooter .formFooter .formEmail .miInputFooter {
   border-radius: 20px;
-  border: 1px solid #A937F9;
+  border: 1px solid #be78f0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
 }
 .miFooter .formFooter .boxBtnFooter {
@@ -126,7 +154,7 @@
   background-color: rgb(17, 17, 17);
 }
 .contenedorHome .boxBannerMasImg .boxImagenPrincipal .imagenPrincipal {
-  width: 60%;
+  width: 40%;
 }
 .contenedorHome .boxSectionBio {
   color: #FFFFFF;
@@ -139,6 +167,7 @@
   padding-bottom: 2%;
 }
 .contenedorHome .boxSectionBio #bioFio .tituloBio {
+  color: #c39ae0;
   padding-top: 7%;
   font-size: 400%;
   font-weight: bold;
@@ -159,7 +188,7 @@
   width: 100%;
   font-size: 130%;
   text-align: center;
-  color: #A937F9;
+  color: #be78f0;
 }
 
 .miGaleria {
@@ -216,27 +245,25 @@
   right: 40px;
   font-size: 25px;
   font-weight: bold;
-  color: #c38beb;
+  color: #c39ae0;
   transition: background-color 0.5s;
 }
 .desfileBox .miClose:hover {
-  color: #A937F9;
+  color: #be78f0;
 }
 .desfileBox .miNext {
   font-size: 25px;
   margin-top: 10%;
   padding: 2%;
   font-weight: bold;
-  color: #c38beb;
+  color: #c39ae0;
   transition: background-color 0.5s;
 }
 .desfileBox .miNext:hover {
-  color: #A937F9;
+  color: #be78f0;
 }
 
 .boxReel {
-  background-color: #6d6d6d;
-  border: solid blue;
   margin-top: 5%;
   padding-top: 9%;
   height: 80vh;
@@ -245,7 +272,8 @@
   justify-content: center;
 }
 .boxReel .reelYoutube {
-  border: solid red;
+  width: 560px;
+  height: 315px;
 }
 
 .bodyBox .cv {
@@ -282,7 +310,7 @@
   padding: 4%;
 }
 .bodyBox .cv .miCard .boxImgCv .boxMasCv .linkMas {
-  color: #c38beb;
+  color: #c39ae0;
 }
 
 .boxContacto {
@@ -299,7 +327,7 @@
 .boxContacto .gridContacto .datosContacto {
   grid-area: cardContacto;
   padding: 3%;
-  border: 0.2px solid #A937F9;
+  border: 0.2px solid #be78f0;
   margin-right: 10%;
   background-color: #000000;
 }
@@ -317,12 +345,12 @@
 .boxContacto .gridContacto .formularioContacto {
   grid-area: formContacto;
   padding: 3%;
-  border: 0.5px solid #A937F9;
+  border: 0.5px solid #be78f0;
   border-radius: 6px;
 }
 .boxContacto .gridContacto .formularioContacto .miInputContacto {
   border-radius: 20px;
-  border: 1px solid #A937F9;
+  border: 1px solid #be78f0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
 }
 .boxContacto .gridContacto .formularioContacto .boxTildesito {
@@ -330,8 +358,8 @@
   padding-bottom: 10%;
 }
 .boxContacto .gridContacto .formularioContacto .boxTildesito .tildesito {
-  background-color: #A937F9;
-  border: 1px solid #A937F9;
+  background-color: #be78f0;
+  border: 1px solid #be78f0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 169, 248, 0.842);
 }
 .boxContacto .gridContacto .formularioContacto .boxBotonesForm {
@@ -340,10 +368,15 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* NavBar */
   .miNav {
     font-size: 18px;
+  }
+  .miNav .barrita .barritajr .barritachild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   /* HOME-BIO */
   .contenedorHome {
@@ -353,6 +386,9 @@
     height: 200px;
     padding-top: 10%;
     background-image: url(././../assets/banner22.png);
+  }
+  .contenedorHome .boxBannerMasImg .boxImagenPrincipal .imagenPrincipal {
+    width: 60%;
   }
   .contenedorHome .boxSectionBio {
     margin: 2%;
@@ -370,10 +406,11 @@
   }
   /* Reel */
   .boxReel {
-    padding-top: 15%;
+    padding-top: 30%;
   }
   .boxReel .reelYoutube {
-    border: solid rgb(0, 225, 255);
+    width: 318px;
+    height: 179px;
   }
   /* CV */
   .cv {
@@ -395,7 +432,7 @@
   }
   /* Footer */
   .miFooter .formFooter {
-    margin-top: 2%;
+    margin-top: 4%;
   }
   .miFooter .formFooter .formEmail {
     width: 60%;
@@ -405,7 +442,37 @@
     width: 40%;
   }
   .miFooter .socialMediaIcon .boxIcons {
+    margin-top: 4%;
+    margin-bottom: 4%;
     width: 50%;
     font-size: 100%;
+  }
+}
+@media screen and (min-height: 1000px) {
+  /* HOME-BIO */
+  .contenedorHome {
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+  .contenedorHome .boxBannerMasImg {
+    padding-top: 0%;
+  }
+  .contenedorHome .boxBannerMasImg .boxBanner {
+    height: 350px;
+    background-image: url(././../assets/banner33.png);
+  }
+  /* Reel */
+  .boxReel {
+    padding-top: 35%;
+  }
+}
+@media screen and (max-width: 290px) {
+  /* Reel */
+  .boxReel {
+    padding-top: 50%;
+  }
+  .boxReel .reelYoutube {
+    width: 250px;
+    height: 150px;
   }
 }/*# sourceMappingURL=styles.css.map */
